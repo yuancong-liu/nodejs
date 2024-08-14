@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "Use the following command to start a server: ```shell node app.js ```",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
