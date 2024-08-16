@@ -1,0 +1,18 @@
+extends layouts/main.pug
+
+block content
+  h1 My Products
+  if products.length <= 0
+    p No products found. Please 
+      a(href="/admin/add-product") add some.
+  else
+    .grid
+      each product in products
+        article.item
+          h2.item-title #{product.title}
+          .image-holder
+          .item-content
+            p.item-price $19.99
+            p.item-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          .item-action
+            button Add to Cart

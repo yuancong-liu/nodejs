@@ -28,6 +28,12 @@ a:link, a:visited {
   color: inherit;
 }
 
+a.active {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: default;
+}
+
 form[action="/admin/add-product"] {
   display: flex;
 }
