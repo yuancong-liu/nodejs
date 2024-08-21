@@ -1,1 +1,16 @@
-[{"title":"adafsf"},{"title":"another"},{"title":"hi there"},{"title":"fasdfsadf"}]
+[
+  {
+    "id": "243424",
+    "title": "Doggy",
+    "imageUrl": "https://www.publicdomainpictures.net/pictures/240000/velka/siberian-husky-portrait-1515274012BpJ.jpg",
+    "description": "this is a doggy",
+    "price": "20.7"
+  },
+  {
+    "id": "243425",
+    "title": "Another Doggy",
+    "imageUrl": "https://www.publicdomainpictures.net/pictures/240000/velka/siberian-husky-portrait-1515274012BpJ.jpg",
+    "description": "this is another doggy",
+    "price": "30.12"
+  }
+]

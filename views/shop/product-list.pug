@@ -10,9 +10,13 @@ block content
       each product in products
         article.item
           h2.item-title #{product.title}
-          .image-holder
+          .image
+            img(src=product.imageUrl, alt=product.title)
           .item-content
-            p.item-price $19.99
-            p.item-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            p.item-price $#{product.price}
+            p.item-description #{product.description}
           .item-action
-            button Add to Cart
+            a(href="/product/" + product.id)  Detail
+            form(action="/add-to-cart" method="POST")
+              input(type="hidden" name="id" value=product.id)
+              button Add to Cart

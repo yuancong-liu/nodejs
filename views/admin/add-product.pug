@@ -3,5 +3,12 @@ extends ../layouts/main.pug
 block content
   h1 Add Product
   form(action="/admin/add-product" method="POST")
-    input(type="text", name="title" placeholder="Title")
+    label(for="title") Title
+      input#title(type="text" name="title" placeholder="Title")
+    label(for="imageUrl") Image URL
+      input#imageUrl(type="text" name="imageUrl" placeholder="Image URL")
+    label(for="description") Description
+      textarea#description(name="description" placeholder="Description")
+    label(for="price") Price
+      input#price(type="number" name="price" placeholder="Price" step="0.01")
     button(type="submit") Add Product

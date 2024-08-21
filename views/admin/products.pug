@@ -1,3 +1,22 @@
 extends ../layouts/main.pug
 
 block content
+  h1 Products
+  if products.length <= 0
+    p No products found. Please 
+      a(href="/admin/add-product") add some.
+  else
+    .grid
+      each product in products
+        article.item
+          h2.item-title #{product.title}
+          .image
+            img(src=product.imageUrl, alt=product.title)
+          .item-content
+            p.item-price $#{product.price}
+            p.item-description #{product.description}
+          .item-action
+            a(href="/admin/edit-product")  Edit
+            form(action="/admin/delete-product" method="POST")
+              input(type="hidden" name="id" value=product.id)
+              button Delete
